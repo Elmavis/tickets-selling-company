@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "u0AQUS0KJ2n0P5WL39NQ/z5EMucKKDgoDyHtgX2HZLB45VrRfwgJvR90ORxEN20rn4Jzi9tERKqW3RCe6txDxQ==",
+  "success": true,
+  "projectFilePath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\tickets_selling\\tickets_selling.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Elmavis\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
