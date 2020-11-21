@@ -1,0 +1,5 @@
+D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\Backpart\bin\Debug\netcoreapp3.1\Backpart.deps.json
+D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\Backpart\bin\Debug\netcoreapp3.1\Backpart.dll
+D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\Backpart\obj\Debug\netcoreapp3.1\Backpart.csprojAssemblyReference.cache
+D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\Backpart\obj\Debug\netcoreapp3.1\Backpart.AssemblyInfoInputs.cache
+D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\Backpart\obj\Debug\netcoreapp3.1\Backpart.AssemblyInfo.cs
