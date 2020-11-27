@@ -4,12 +4,12 @@
     "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\UnitTests\\UnitTests.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Backpart.csproj": {
+    "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Backpart.csproj",
-        "projectName": "Backpart",
-        "projectPath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Backpart.csproj",
+        "projectUniqueName": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Domain.csproj",
         "packagesPath": "C:\\Users\\Elmavis\\.nuget\\packages\\",
         "outputPath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\obj\\",
         "projectStyle": "PackageReference",
@@ -93,8 +93,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Backpart.csproj": {
-                "projectPath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Backpart.csproj"
+              "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Domain.csproj": {
+                "projectPath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Domain.csproj"
               }
             }
           }
@@ -111,6 +111,14 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.10.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.15.1, )"
             }
           },
           "imports": [
@@ -162,8 +170,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Backpart.csproj": {
-                "projectPath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Backpart.csproj"
+              "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Domain.csproj": {
+                "projectPath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Domain.csproj"
               },
               "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\tickets_selling\\tickets_selling.csproj": {
                 "projectPath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\tickets_selling\\tickets_selling.csproj"
@@ -187,6 +195,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.15.1, )"
             },
             "coverlet.collector": {
               "target": "Package",

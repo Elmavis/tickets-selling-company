@@ -1,0 +1,9 @@
+D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\Backpart\bin\Release\netcoreapp3.1\Domain.deps.json
+D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\Backpart\bin\Release\netcoreapp3.1\Domain.dll
+D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\Backpart\bin\Release\netcoreapp3.1\Domain.pdb
+D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\Backpart\obj\Release\netcoreapp3.1\Domain.csprojAssemblyReference.cache
+D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\Backpart\obj\Release\netcoreapp3.1\Domain.AssemblyInfoInputs.cache
+D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\Backpart\obj\Release\netcoreapp3.1\Domain.AssemblyInfo.cs
+D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\Backpart\obj\Release\netcoreapp3.1\Domain.csproj.CoreCompileInputs.cache
+D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\Backpart\obj\Release\netcoreapp3.1\Domain.dll
+D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\Backpart\obj\Release\netcoreapp3.1\Domain.pdb

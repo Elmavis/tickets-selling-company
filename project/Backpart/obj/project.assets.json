@@ -3954,9 +3954,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Backpart.csproj",
-      "projectName": "Backpart",
-      "projectPath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Backpart.csproj",
+      "projectUniqueName": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Domain.csproj",
+      "projectName": "Domain",
+      "projectPath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Domain.csproj",
       "packagesPath": "C:\\Users\\Elmavis\\.nuget\\packages\\",
       "outputPath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\obj\\",
       "projectStyle": "PackageReference",

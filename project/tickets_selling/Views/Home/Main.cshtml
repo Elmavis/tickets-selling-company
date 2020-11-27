@@ -1,0 +1,33 @@
+﻿@model Domain.Entities.Route
+
+@{
+    ViewData["Title"] = "Main";
+}
+
+<h1>Main</h1>
+
+<h3>Аналог Main page из фигмы</h3>
+
+<p>
+    Здесь два поля и кнопка
+    При нажатии переходит на
+    GetRoutesByNamesAndDate
+</p>
+
+После добавить vue.js
+<div id="search-part">
+    @using (Html.BeginForm("GetRoutesByNamesAndDate", "Route", FormMethod.Get))
+    {
+        <p>Откуда: @Html.TextBox("departureName", "Минск")</p>
+        <p>Куда: @Html.TextBox("destinationName", "Витебск")</p>
+
+        <input required="required" type="text" name="departure_date"
+               data-uil="start_date" id="departure_date"
+               class="form-input date_input js-datepicker
+           hasDatepicker" placeholder="Дата" autocomplete="off"
+               data-max-date="+59D" data-mark-after-day="44" readonly="readonly">
+
+        <p><input type="submit" value="Отправить" /></p>                
+    }
+
+</div>

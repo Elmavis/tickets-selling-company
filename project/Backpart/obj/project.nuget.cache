@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8mI2ssChYHz6xCKLfFoyscolIw/5xIH1yv52L54GlGhQT/D/0dXRGda7ExRw6ITzkFN23SnxTFCJUH2W3ctcYA==",
+  "dgSpecHash": "IBuhgUVYuWhfBFz9wK7EDzo2dLfbZrifRVovAOSSSMSzEzJUF9cuzlImuJaY6fhYx0hbL8ht3Jo5UXeUKDl4Jg==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Backpart.csproj",
+  "projectFilePath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Elmavis\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Elmavis\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

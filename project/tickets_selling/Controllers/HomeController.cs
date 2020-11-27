@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using tickets_selling.Models;
+using Domain.Entities;
+using Domain.Abstract;
+using Moq;
 
 namespace tickets_selling.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IRouteRepository routesRepo)
         {
-            _logger = logger;
         }
 
         public IActionResult Index()
@@ -23,15 +23,9 @@ namespace tickets_selling.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public ActionResult Main()
         {
             return View();
-        }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
 }
