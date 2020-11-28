@@ -1,17 +1,9 @@
-﻿@using Domain.Entities
+@using Domain.Entities
+@using Microsoft.AspNetCore.Http.Extensions
 @model IEnumerable<Route>
 
 @{
     ViewBag.Title = "Найденные маршруты";
-}
-
-@foreach (var p in @Model)
-{
-    <div>
-        <h3>@p.DepartureName</h3>
-        <p>@p.DestinationName</p>
-        <p>@p.
-    </div>
 }
 
 <table class="table">
