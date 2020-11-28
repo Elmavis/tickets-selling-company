@@ -21,11 +21,11 @@
         <p>Откуда: @Html.TextBox("departureName", "Минск")</p>
         <p>Куда: @Html.TextBox("destinationName", "Витебск")</p>
 
-        <input required="required" type="text" name="departure_date"
+        <input required="required" type="text" name="departureDate"
                data-uil="start_date" id="departure_date"
                class="form-input date_input js-datepicker
            hasDatepicker" placeholder="Дата" autocomplete="off"
-               data-max-date="+59D" data-mark-after-day="44" readonly="readonly">
+               data-max-date="+59D" data-mark-after-day="44" value="20.07.2015" >
 
         <p><input type="submit" value="Отправить" /></p>                
     }

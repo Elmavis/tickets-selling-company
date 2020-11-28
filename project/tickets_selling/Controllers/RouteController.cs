@@ -24,10 +24,12 @@ namespace tickets_selling.Controllers
             return View(routesRepository.GetAll());
         }
 
-        public ViewResult GetRoutesByNamesAndDate(string DestinationName, string departureName, 
+        public ViewResult GetRoutesByNamesAndDate(string destinationName, string departureName, 
             string departureDate)
-        {            
-            return View(routesRepository.GetAll());
+        {
+            DateTime departureDateTime = DateTime.Parse(departureDate);
+            return View(routesRepository.GetRoutesByNamesAndDate(departureName, destinationName,
+                departureDateTime));
         }
     }
 }

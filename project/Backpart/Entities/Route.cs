@@ -11,6 +11,7 @@ namespace Domain.Entities
         public string DepartureName { get; set; }
         public DateTime DepartureDateTime { get; set; }
         public DateTime ArrivalDateTime { get; set; }
+        public decimal Price { get; set; }
         public string Status { get; set; }
 
         public bool IsCanceled()

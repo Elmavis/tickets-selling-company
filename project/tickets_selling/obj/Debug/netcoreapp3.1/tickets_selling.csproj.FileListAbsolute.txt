@@ -118,3 +118,4 @@ D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\projec
 D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\tickets_selling\obj\Debug\netcoreapp3.1\Razor\Views\Route\GetRoutesByNamesAndDate.cshtml.g.cs
 D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\tickets_selling\obj\Debug\netcoreapp3.1\Razor\Views\Home\Main.cshtml.g.cs
 D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\tickets_selling\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\tickets-selling - Web Deploy\profile.arm.json
+D:\Projects\Univer\tickets-selling-company-folder\tickets-selling-company\project\tickets_selling\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
