@@ -21,6 +21,7 @@ namespace tickets_selling.Controllers
         }
 
         //changed
+        [HttpGet]
         public RedirectToActionResult AddToCart(int routeId, string returnUrl)
         {
             Route route = repository.GetAll().FirstOrDefault(repository => repository.Id == routeId);
@@ -32,6 +33,7 @@ namespace tickets_selling.Controllers
             return RedirectToAction("Index", new { returnUrl });
         }
 
+        [HttpGet]
         public RedirectToActionResult RemoveFromCart(int routeId, string returnUrl)
         {
             Route route = repository.GetAll().FirstOrDefault(repository => repository.Id == routeId);
@@ -43,6 +45,7 @@ namespace tickets_selling.Controllers
             return RedirectToAction("Index", new { returnUrl });
         }
 
+        [HttpGet]
         public ViewResult Index(string returnUrl)
         {
             return View(new CartIndexViewModel
