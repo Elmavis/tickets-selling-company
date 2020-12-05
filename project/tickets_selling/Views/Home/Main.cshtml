@@ -1,25 +1,21 @@
 ﻿@model Domain.Entities.Route
 
-@{
-    ViewData["Title"] = "Main";
-}
+@{ ViewData["Title"] = "Main"; }
 <div>
-<h1>Минский автовокзал онлайн</h1>
-<p>Теперь Вы можете покупать билеты не выходя из дома</p>
+    <h1>Минский автовокзал онлайн</h1>
+    <p>Теперь Вы можете покупать билеты не выходя из дома</p>
 
-<input type="datetime" атрибуты>
+    <input type="datetime" атрибуты>
 
-<div id="search-part">
-    @using (Html.BeginForm("GetRoutesByNamesAndDate", "Route", FormMethod.Get))
-    {
-        <p>Откуда: @Html.TextBox("departureName", "Минск")</p>
-        <p>Куда: @Html.TextBox("destinationName", "Витебск")</p>
-        <p>Дата: @Html.TextBoxFor(model => model.Start, new { @type="date", @class = "form-control datepicker",  @Value = Model.Start.ToString("yyyy-MM-dd") } ) </p>
+    <div id="search-part">
+        @using (Html.BeginForm("GetRoutesByNamesAndDate", "Route", FormMethod.Get))
+        {
+<p>Откуда: @Html.TextBox("departureName", "Minsk")</p>
+                <p>Куда: @Html.TextBox("destinationName", "Vitebsk")</p>
 
-        <input type="submit" value="Поиск"/>             
+                                <p>Дата: @Html.TextBox("departureDate", "20.07.2015") </p>
 
-    }
-
-</div>
+                                                <input type="submit" value="Поиск" />}
+    </div>
 
 </div>
