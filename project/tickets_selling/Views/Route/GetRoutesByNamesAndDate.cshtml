@@ -21,7 +21,7 @@
                 @foreach (var route in @Model)
                 {
                     <tr>
-                        <form style="display: inline" action="@Url.Content("~/Cart/Index")" method="get">
+                        <form style="display: inline" action="@Url.Content("~/Cart/AddToCart")" method="get">
                             <input id="routeId" name="routeId" type="hidden" value="@route.Id">
                             @Html.Hidden("returnUrl", @Context.Request.GetDisplayUrl())
                             <th>@route.Id @route.DepartureName - @route.DestinationName</th>

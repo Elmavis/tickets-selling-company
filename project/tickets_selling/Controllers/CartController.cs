@@ -13,7 +13,7 @@ namespace tickets_selling.Controllers
     public class CartController : Controller
     {
         private IRouteRepository repository;
-        private Cart cart;
+        private static Cart cart = new Cart();
 
         public CartController(IRouteRepository repository)
         {

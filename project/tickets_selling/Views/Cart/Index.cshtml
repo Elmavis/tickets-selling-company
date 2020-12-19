@@ -20,12 +20,12 @@
                 @foreach (var line in Model.Cart.GetItems())
                 {
                     <tr>
-                        <form style="display: inline" method="get">
+                        <form style="display: inline" method="get" action="@Url.Content("~/Cart/RemoveFromCart")">
                             <input id="routeId" name="routeId" type="hidden" value="@line.Route.Id">
                             <input id="returnUrl" name="returnUrl" type="hidden" value="@Model.ReturnUrl">
                             
                             <td class="text-center">@line.Quantity</td>
-                            <td class="text-left">@line.Route.DepartureName + "-" + @line.Route.DestinationName</td>
+                            <td class="text-left">@line.Route.DepartureName - @line.Route.DestinationName</td>
                             <td class="text-right">@line.Route.Price.ToString("# руб")</td>
                             <td class="text-right">
                                 @((line.Quantity * line.Route.Price).ToString("# руб"))
@@ -50,6 +50,4 @@
     <div class="text-center">
         <a class="btn btn-primary" href="@Model.ReturnUrl">Продолжить покупки</a>
     </div>
-
-    <h1>Index</h1>
 
