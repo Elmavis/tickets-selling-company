@@ -4,42 +4,52 @@
     ViewData["Title"] = "Корзина";
 }
 
-<h2>Ваша корзина</h2>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Кол-во</th>
-            <th>Игра</th>
-            <th class="text-right">Цена</th>
-            <th class="text-right">Общая цена</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var line in Model.Cart.GetItems())
-        {
-            <tr>
-                <td class="text-center">@line.Quantity</td>
-                <td class="text-left">@line.Route.DepartureName + "-" + @line.Route.DestinationName</td>
-                <td class="text-right">@line.Route.Price.ToString("# руб")</td>
-                <td class="text-right">
-                    @((line.Quantity * line.Route.Price).ToString("# руб"))
-                </td>
-            </tr>
-        }
-    </tbody>
-    <tfoot>
-        <tr>
-            <td colspan="3" class="text-right">Итого:</td>
-            <td class="text-right">
-                @Model.Cart.ComputeTotalValue().ToString("# руб")
-            </td>
-        </tr>
-    </tfoot>
-</table>
+    <h2>Ваша корзина</h2>
+    <div class=" block-form align-items-center pt-2">
+        <table class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>Кол-во</th>
+                    <th>Маршрут</th>
+                    <th class="text-right">Цена</th>
+                    <th class="text-right">Общая цена</th>
+                    <th>Удалить</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var line in Model.Cart.GetItems())
+                {
+                    <tr>
+                        <form style="display: inline" method="get">
+                            <input id="routeId" name="routeId" type="hidden" value="@line.Route.Id">
+                            <input id="returnUrl" name="returnUrl" type="hidden" value="@Model.ReturnUrl">
+                            
+                            <td class="text-center">@line.Quantity</td>
+                            <td class="text-left">@line.Route.DepartureName + "-" + @line.Route.DestinationName</td>
+                            <td class="text-right">@line.Route.Price.ToString("# руб")</td>
+                            <td class="text-right">
+                                @((line.Quantity * line.Route.Price).ToString("# руб"))
+                            </td>
+                            <td><input type="submit" class="btn btn-sm btn-outline-danger" value="Удалить"></td>
 
-<div class="text-center">
-    <a class="btn btn-primary" href="@Model.ReturnUrl">Продолжить покупки</a>
-</div>
+                        </form>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" class="text-right">Итого:</td>
+                    <td class="text-right">
+                        @Model.Cart.ComputeTotalValue().ToString("# руб")
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 
-<h1>Index</h1>
+    <div class="text-center">
+        <a class="btn btn-primary" href="@Model.ReturnUrl">Продолжить покупки</a>
+    </div>
+
+    <h1>Index</h1>
 

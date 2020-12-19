@@ -7661,25 +7661,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Elmavis\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\anrgr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\tickets_selling\\tickets_selling.csproj",
+      "projectUniqueName": "C:\\Users\\anrgr\\Source\\Repos\\tickets-selling-company\\project\\tickets_selling\\tickets_selling.csproj",
       "projectName": "tickets_selling",
-      "projectPath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\tickets_selling\\tickets_selling.csproj",
-      "packagesPath": "C:\\Users\\Elmavis\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\tickets_selling\\obj\\",
+      "projectPath": "C:\\Users\\anrgr\\Source\\Repos\\tickets-selling-company\\project\\tickets_selling\\tickets_selling.csproj",
+      "packagesPath": "C:\\Users\\anrgr\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\anrgr\\Source\\Repos\\tickets-selling-company\\project\\tickets_selling\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Elmavis\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\anrgr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -7691,8 +7686,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Domain.csproj": {
-              "projectPath": "D:\\Projects\\Univer\\tickets-selling-company-folder\\tickets-selling-company\\project\\Backpart\\Domain.csproj"
+            "C:\\Users\\anrgr\\Source\\Repos\\tickets-selling-company\\project\\Backpart\\Domain.csproj": {
+              "projectPath": "C:\\Users\\anrgr\\Source\\Repos\\tickets-selling-company\\project\\Backpart\\Domain.csproj"
             }
           }
         }
@@ -7737,7 +7732,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
