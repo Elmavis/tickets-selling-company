@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonAccount"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="Аккаунт"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Корзина"
+            app:layout_constraintEnd_toStartOf="@+id/buttonRoutes"
+            app:layout_constraintStart_toEndOf="@+id/buttonAccount"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/buttonRoutes"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:text="@string/routes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSearch"
+        app:layout_constraintTop_toTopOf="@+id/buttonSearch">
+
+        <EditText
+            android:id="@+id/editTextDestinationName"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:text="Minsk"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="45dp"
+            tools:layout_conversion_absoluteWidth="56dp" />
+
+        <EditText
+            android:id="@+id/editTextDepartureName"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:text="Vitebsk"
+            app:layout_constraintStart_toEndOf="@+id/editTextDestinationName"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="45dp"
+            tools:layout_conversion_absoluteWidth="67dp" />
+
+
+        <EditText
+            android:id="@+id/editTextDepartureDate"
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            android:text="20.07.2015"
+            app:layout_constraintEnd_toStartOf="@+id/buttonSearch"
+            app:layout_constraintStart_toEndOf="@+id/editTextDepartureName"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="45dp"
+            tools:layout_conversion_absoluteWidth="96dp" />
+
+        <Button
+            android:id="@+id/buttonSearch"
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="88dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>
