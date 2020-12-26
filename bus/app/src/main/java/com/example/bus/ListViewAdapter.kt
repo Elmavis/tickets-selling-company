@@ -40,7 +40,7 @@ class ListViewAdapter(
 
         if (dateTime != null) {
             name.text = itemList[position][0] ?: ""
-            dateTime.text = itemList[position][1] ?: "" + " - " + itemList[position][2] ?: ""
+            dateTime.text = (itemList[position][1] ?: "") + " - " + itemList[position][2] ?: ""
             status.text = itemList[position][3] ?: ""
         } else {
             textViewQuantity.text = itemList[position][0]

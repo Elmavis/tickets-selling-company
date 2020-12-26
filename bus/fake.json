@@ -1,0 +1,40 @@
+{
+  "GetRoutesByNamesAndDate" : {
+    "tickets": [
+      {
+        "Route": "Минск-Витебск",
+        "DepartureDateTime": "12:00",
+        "ArrivalDateTime": "15:00",
+        "Status": "OPENED"
+      },
+      {
+        "Route": "Минск-Витебск",
+        "DepartureDateTime": "12:00",
+        "ArrivalDateTime": "15:00",
+        "Status": "OPENED"
+      },
+      {
+        "Route": "Минск-Витебск",
+        "DepartureDateTime": "12:00",
+        "ArrivalDateTime": "15:00",
+        "Status": "OPENED"
+      }
+    ]
+  },
+  "GetRoutsOfCart" : {
+    "tickets": [
+      {
+        "Quantity": "2",
+        "Route": "Минск-Витебск",
+        "Price": "10 BYN",
+        "TotalPrice": "20 BYN"
+      },
+      {
+        "Quantity": "2",
+        "Route": "Минск-Витебск",
+        "Price": "10 BYN",
+        "TotalPrice": "20 BYN"
+      }
+    ]
+  }
+}
