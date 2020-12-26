@@ -8,6 +8,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Domain.Abstract;
+using Domain.Entities;
+using Moq;
+using Microsoft.AspNetCore.Http;
 
 namespace tickets_selling
 {
@@ -20,15 +24,20 @@ namespace tickets_selling
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+                // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddScoped<IRouteRepository, RouteRepository>();
+            services.AddDistributedMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -50,7 +59,19 @@ namespace tickets_selling
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Home}/{action=Main}/{id?}");
+            });
+
+            app.UseSession();
+            app.Run(async (context) =>
+            {
+                if (context.Session.Keys.Contains("name"))
+                    await context.Response.WriteAsync($"Hello {context.Session.GetString("name")}!");
+                else
+                {
+                    context.Session.SetString("name", "Tom");
+                    await context.Response.WriteAsync("Hello World!");
+                }
             });
         }
     }

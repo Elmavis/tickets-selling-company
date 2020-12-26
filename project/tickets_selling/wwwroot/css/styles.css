@@ -1,0 +1,37 @@
+.background-container {
+    background-image: url("../assets/background.png");
+    background-repeat: repeat;
+    background-position: center;
+    padding-top: 20px;
+}
+
+.background-header {
+    background: #889BB8;
+    color: black;
+}
+
+.background-footer {
+    background: #3D325F;
+    color: white;
+}
+
+.background-footer a, .background-footer a:hover, .background-footer a:active, .background-footer a:visited {
+    color: white;
+}
+
+.background-header a, .background-header a:hover, .background-header a:active, .background-header a:visited {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link {
+color: white;
+}
+
+.block-form {
+    background: #889BB8a0;
+    border-radius: 16px;
+}
+
+.table {
+    margin: auto;
+}

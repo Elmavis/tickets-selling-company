@@ -1,0 +1,20 @@
+﻿@model Domain.Entities.Route
+
+@{ ViewData["Title"] = "Main"; }
+<div>
+    <h1>Минский автовокзал онлайн</h1>
+    <p>Теперь Вы можете покупать билеты не выходя из дома</p>
+
+
+    <div id="search-part">
+        @using (Html.BeginForm("GetRoutesByNamesAndDate", "Route", FormMethod.Get))
+        {
+<p>Откуда: @Html.TextBox("departureName", "Minsk")</p>
+                <p>Куда: @Html.TextBox("destinationName", "Vitebsk")</p>
+
+                                <p>Дата: @Html.TextBox("departureDate", "20.07.2015") </p>
+
+                                                <input type="submit" value="Поиск" />}
+    </div>
+
+</div>

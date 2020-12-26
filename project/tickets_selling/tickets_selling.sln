@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tickets_selling", "tickets_selling.csproj", "{1D21AF49-344D-4145-B2B1-43904443894A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backpart", "..\Backpart\Backpart.csproj", "{DE711676-3CB2-4735-905B-995B1D90371D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "..\Backpart\Domain.csproj", "{DE711676-3CB2-4735-905B-995B1D90371D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "..\UnitTests\UnitTests.csproj", "{0310C098-21EA-459D-AB38-E4B671793A61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "..\UnitTests\UnitTests.csproj", "{0310C098-21EA-459D-AB38-E4B671793A61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
